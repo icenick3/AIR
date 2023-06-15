@@ -1,0 +1,117 @@
+*{
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  img {
+  display: block;
+    margin: 0 auto;
+    width: 50vw;
+    padding: 20px 0;
+    @media screen and (min-device-width: 500px) {
+      width: 20vw;
+
+    }
+  }
+  .subtitle{
+    text-align: center;
+    padding: 0 10px 20px 10px;
+    font-size: 15px;
+    @media screen and (min-device-width: 500px) {
+      width: 40vw;
+      display: block;
+      margin: 0 auto;
+      font-size: 22px;
+    }
+
+  }
+  .dots{
+    display: flex;
+    width: 100%;
+   justify-content: center;
+    margin: 10px 0;
+    .dot{
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      margin: 0 10px;
+      background: lightgray;
+      @media screen and (min-device-width: 500px) {
+        width: 20px ;
+        height: 20px;
+      }
+    }
+    .active{
+      background: black;
+    }
+  }
+.counter{
+  margin:  0 auto;
+  width: fit-content;
+  font-size: 14px;
+  padding: 20px 0;
+  @media screen and (min-device-width: 500px) {
+    font-size: 22px;
+  }
+}
+
+  .body-wrapper{
+    display: block;
+    font-size: 19px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    button{
+      padding: 10px 20px;
+      color: white;
+      background: black;
+      outline: none;
+      border: none;
+      font-size: 16px;
+      display: block;
+      margin:  20px auto;
+      width: 70vw;
+      @media screen and (min-device-width: 500px) {
+        width: 20vw;
+        font-size: 24px;
+      }
+    }
+
+
+  }
+}
+.quest {
+  position: absolute;
+  top: 0;
+  width: 90vw;
+  left: calc(50% - 45vw);
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  @media screen and (min-device-width: 500px) {
+    font-size: 24px;
+  }
+}
+
+.slide-enter {
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-exit {
+  transform: translateX(-100%);
+}
+
+.slide-exit-active {
+  transform: translateX(-200%);
+  transition: transform 0.3s ease-in-out;
+}
+
