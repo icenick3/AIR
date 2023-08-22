@@ -1,0 +1,102 @@
+@charset "UTF-8";
+.rform {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 332313312433;
+  overflow: scroll;
+  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Для IE та Edge */
+}
+.rform::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-device-width: 500px) {
+  .rform {
+    padding: 0 1vh;
+  }
+}
+
+.formXX {
+  background: white;
+  width: fit-content;
+  margin: 10vh auto;
+  padding: 50px 30px 30px 30px;
+  border-radius: 12px;
+  transition: 0.4s all;
+}
+@media screen and (max-device-width: 500px) {
+  .formXX {
+    width: 100%;
+  }
+}
+.formXX p {
+  border: 1px solid black;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin: 20px auto;
+}
+.formXX h1 {
+  text-align: center;
+}
+.formXX input {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: #f2ecff;
+  margin: 20px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+.formXX input:hover {
+  outline: 2px solid mediumpurple;
+  cursor: pointer;
+}
+.formXX .phone {
+  display: block;
+  width: 100%;
+}
+.formXX textarea {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: #f2ecff;
+  width: 100%;
+}
+.formXX textarea:hover {
+  outline: 2px solid mediumpurple;
+  cursor: pointer;
+}
+.formXX button {
+  display: block;
+  margin-top: 20px;
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.formXX button:hover {
+  cursor: pointer;
+}
+
+.show404 {
+  display: block;
+  pointer-events: all;
+}
+
+/*# sourceMappingURL=Form.css.map */

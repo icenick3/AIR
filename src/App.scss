@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,6 +9,18 @@
 
 
 .App {
+background-color: white;
+  height: 100vh;
+  width: 96%;
+  margin: 2%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5);
+  .h2TEXT{
+    padding: 0 20px 10px 20px;
+    color:  #1972B5;
+    font-size: 20px;
+    text-align: center;
+  }
   img {
   display: block;
     margin: 0 auto;
@@ -21,6 +35,7 @@
     text-align: center;
     padding: 0 10px 20px 10px;
     font-size: 15px;
+    font-weight: 500;
     @media screen and (min-device-width: 500px) {
       width: 40vw;
       display: block;
@@ -33,27 +48,30 @@
     display: flex;
     width: 100%;
    justify-content: center;
-    margin: 10px 0;
+    align-items: center;
+    margin: 10px 0 20px  0;
     .dot{
-      width: 12px;
-      height: 12px;
+      width: 6px;
+      height: 6px;
       border-radius: 100%;
       margin: 0 10px;
-      background: lightgray;
+      background: #1972B5;
       @media screen and (min-device-width: 500px) {
         width: 20px ;
         height: 20px;
       }
     }
     .active{
-      background: black;
+      width: 12px;
+      height: 12px;
     }
   }
 .counter{
   margin:  0 auto;
   width: fit-content;
-  font-size: 14px;
-  padding: 20px 0;
+  font-size: 16px;
+  padding: 14px 0 8px 0;
+  display: none;
   @media screen and (min-device-width: 500px) {
     font-size: 22px;
   }
@@ -63,18 +81,20 @@
     display: block;
     font-size: 19px;
     margin: 0 auto;
+    background: white;
     width: 100%;
     text-align: center;
     position: relative;
     button{
       padding: 10px 20px;
       color: white;
-      background: black;
+      background: #1972B5;
+      border-radius: 15px;
       outline: none;
       border: none;
       font-size: 16px;
       display: block;
-      margin:  20px auto;
+      margin:  10px auto;
       width: 70vw;
       @media screen and (min-device-width: 500px) {
         width: 20vw;
@@ -97,6 +117,25 @@
   }
 }
 
+.quest-txt{
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.quest-txt2{
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  span{
+    font-size: 15px;
+    display: block;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+}
 .slide-enter {
   transform: translateX(100%);
 }
@@ -115,3 +154,11 @@
   transition: transform 0.3s ease-in-out;
 }
 
+body{
+  background-color: #2dc6de;
+}
+
+#redBtn{
+  background: #FE0000;
+
+}
