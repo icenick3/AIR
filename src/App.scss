@@ -9,18 +9,6 @@
 
 
 .App {
-background-color: white;
-  height: 100vh;
-  width: 96%;
-  margin: 2%;
-  border-radius: 15px;
-  box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5);
-  .h2TEXT{
-    padding: 0 20px 10px 20px;
-    color:  #1972B5;
-    font-size: 20px;
-    text-align: center;
-  }
   img {
   display: block;
     margin: 0 auto;
@@ -55,7 +43,7 @@ background-color: white;
       height: 6px;
       border-radius: 100%;
       margin: 0 10px;
-      background: #1972B5;
+      background: black;
       @media screen and (min-device-width: 500px) {
         width: 20px ;
         height: 20px;
@@ -88,7 +76,7 @@ background-color: white;
     button{
       padding: 10px 20px;
       color: white;
-      background: #1972B5;
+      background: black;
       border-radius: 15px;
       outline: none;
       border: none;
@@ -154,11 +142,35 @@ background-color: white;
   transition: transform 0.3s ease-in-out;
 }
 
-body{
-  background-color: #2dc6de;
-}
+
 
 #redBtn{
-  background: #FE0000;
+  background: black;
 
+}
+
+.qCounter{
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.input{
+  width: 90%;
+  margin: 0 auto;
+
+  textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+  }
+}
+
+.timer{
+  padding: 20px 0;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  top: 250px;
+  width: 100%;
 }

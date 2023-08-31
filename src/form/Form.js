@@ -20,8 +20,8 @@ const [activ, setActive] = useState(false)
             <form onSubmit={onsubmit} className={form ? "formXX show404" : "formXX"} onClick={(e) => e.stopPropagation()}>
                 <input type="text" placeholder="email"/>
                 <input type="text" placeholder="number"/>
-                {activ && <p>Merci pour votre commande, notre responsable vous contactera bientôt</p>}
-                <button>Buy</button>
+                {activ && <p>Ďakujeme za vašu objednávku, náš zodpovedný vás čoskoro skontaktuje</p>}
+                <button>Kúpiť</button>
             </form>
         </div>
 
